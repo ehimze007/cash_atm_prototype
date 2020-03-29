@@ -1,0 +1,92 @@
+body{
+  background-color: #2E4053;
+  text-align: center;
+}
+
+.atm_body{
+  border-style: ridge;
+  border-color: #85929E;
+  border-width: 5px;
+  height: 80em;
+  width: 55em;
+  margin: 5em auto;
+  background-color: #3498DB;
+}
+
+h1{
+  font-family: 'Comic Neue', cursive;
+  font-style: italic;
+  color: #FCF3CF;
+}
+
+.upper_half{
+  width: 50em;
+  margin: 2em auto;
+  display: inline-flex;
+}
+
+.atm_screen{
+  border: solid #ffffff;
+  border-style: groove;
+  border-width: 0.5em;
+  border-color: #7F8C8D;
+  width: 35em;
+  height: 25em;
+  background-color: white;
+  margin: 0.05em 15px 0px 15px;
+  display: inline-block;
+}
+
+.button_style1{
+  margin-top: 5em;
+  margin-left: 1px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  width: 100px;
+  display: inline-block;
+
+}
+
+.button_style2{
+  margin-top: 5em;
+  margin-left: 2px;
+  margin-right: 1px;
+  margin-bottom: 2px;
+  width: 100px;
+  display: inline-block;
+}
+
+button{
+  margin: 5px 0;
+  width: 7em;
+  height: 5em;
+  background-color: #D6DBDF;
+}
+
+
+.numeric_keypads{
+  /* border: 2px solid; */
+  width: 30em;
+  margin-top: 3em;
+  margin-left: 6em;
+}
+
+.button0, .button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8, .button9, .button_none1, .button_none2{
+  margin: 1em 1em;
+  width: 7em;
+  background-color: #D6DBDF;
+}
+
+.lower_half{
+  display: inline-flex;
+}
+
+.control_buttons{
+  margin: 5em 3em;
+  width: 15em;
+}
+
+.enter_button, .delete_button, .cancel_button{
+  width: 15em;
+  background-color: #D6DBDF;
+}
