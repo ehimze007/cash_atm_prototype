@@ -1,92 +1,98 @@
 body{
-  background-color: #2E4053;
+  background-color: #000000;
   text-align: center;
 }
 
 .atm_body{
-  border-style: ridge;
-  border-color: #85929E;
-  border-width: 5px;
-  height: 80em;
-  width: 55em;
+  border: 0.5em outset #212F3D;
+  /* border-color: #85929E; */
+  /* border-width: 0.1em; */
+  height: 80%;
+  width: 55%;
   margin: 5em auto;
-  background-color: #3498DB;
+  background-color: #566573;
 }
 
 h1{
-  font-family: 'Comic Neue', cursive;
-  font-style: italic;
+  font-family: monospace;
   color: #FCF3CF;
+  margin: 0.5em auto 0 auto;
+  line-height: normal;
+  font-size: 3vw;
 }
 
 .upper_half{
-  width: 50em;
-  margin: 2em auto;
+  margin: 0.5em auto;
   display: inline-flex;
+  width: 100%;
+  height: 50%;
+  text-align: center;
 }
 
 .atm_screen{
   border: solid #ffffff;
-  border-style: groove;
-  border-width: 0.5em;
   border-color: #7F8C8D;
-  width: 35em;
-  height: 25em;
+  width: 200vw;
+  height: 11vw;
   background-color: white;
-  margin: 0.05em 15px 0px 15px;
-  display: inline-block;
+  padding-top: 1.875em;
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 1vw;
+  font-weight: bold;
+}
+
+.screen_buttons{
+  width: 7vw;
+  height: 3.5vw;
+  margin-top: 0.2em;
+  font-size: 2vw;
+  background-color: #D6DBDF;
 }
 
 .button_style1{
-  margin-top: 5em;
-  margin-left: 1px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  width: 100px;
-  display: inline-block;
-
+  margin-top: 4vw;
+  margin-right: 0.5em;
 }
 
 .button_style2{
-  margin-top: 5em;
-  margin-left: 2px;
-  margin-right: 1px;
-  margin-bottom: 2px;
-  width: 100px;
-  display: inline-block;
-}
-
-button{
-  margin: 5px 0;
-  width: 7em;
-  height: 5em;
-  background-color: #D6DBDF;
-}
-
-
-.numeric_keypads{
-  /* border: 2px solid; */
-  width: 30em;
-  margin-top: 3em;
-  margin-left: 6em;
-}
-
-.button0, .button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8, .button9, .button_none1, .button_none2{
-  margin: 1em 1em;
-  width: 7em;
-  background-color: #D6DBDF;
+  margin-top: 4vw;
+  margin-left: 0.5em;
 }
 
 .lower_half{
   display: inline-flex;
+  width: 100%;
+  height: 50%;
+  text-align: center;
 }
 
-.control_buttons{
-  margin: 5em 3em;
-  width: 15em;
+.numeric_keypads{
+  margin: 0 0 auto auto;
 }
 
-.enter_button, .delete_button, .cancel_button{
-  width: 15em;
+.button{
+  width: 13vw;
+  height: 5vw;
+  font-size: 3vw;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   background-color: #D6DBDF;
+  display: block;
+}
+
+.numeric_buttons{
+  width: 8vw;
+  height: 5vw;
+  margin: 0.2em;
+  font-style: italic;
+  font-size: 3vw;
+  background-color: #D6DBDF;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+  background-color: green;
 }
