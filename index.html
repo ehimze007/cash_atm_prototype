@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>ATM</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>ATM prototype</title>
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -11,60 +12,49 @@
   </head>
   <body>
     <div class="atm_body">
-      <h1>ABOBO & EHIMZE'S <br />CASH ATM</h1>
+      <h1>ATM PROTOTYPE</h1>
       <div class="upper_half">
         <div class="button_style1">
-          <button type="button" name="button">☛</button>
-          <button type="button" name="button">☛</button> <br />
-          <button type="button" name="button">☛</button> <br />
-          <button type="button" name="button">☛</button>
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button> <br />
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button> <br />
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button>
         </div>
 
         <div class="atm_screen"></div>
+
         <div class="button_style2">
-          <button type="button" name="button">☚</button>
-          <button type="button" name="button">☚</button>
-          <button type="button" name="button">☚</button>
-          <button type="button" name="button">☚</button>
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☚</button> <br />
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☚</button> <br />
+          <button type="button" name="button" class = "screen_buttons button_reponsiveness">☚</button>
         </div>
       </div>
 
       <div class="lower_half">
         <div class="numeric_keypads">
-          <div class="firstrow_numeric_keypads">
-            <button type="button" name="button" class="button1" ;>1</button>
-            <button type="button" name="button" class="button2" ;>2</button>
-            <button type="button" name="button" class="button3" ;>3</button>
-          </div>
-          <div class="secondrow_numeric_keypads">
-            <button type="button" name="button" class="button4" ;>4</button>
-            <button type="button" name="button" class="button5" ;>5</button>
-            <button type="button" name="button" class="button6" ;>6</button>
-          </div>
-          <div class="thirdrow_numeric_keypads">
-            <button type="button" name="button" class="button7" ;>7</button>
-            <button type="button" name="button" class="button8" ;>8</button>
-            <button type="button" name="button" class="button9" ;>9</button>
-          </div>
-          <div class="fourthrow_numeric_keypads">
-            <button type="button" name="button" class="button_none1" ;>
-              *
-            </button>
-            <button type="button" name="button" class="button0" ;>0</button>
-            <button type="button" name="button" class="button_none2" ;>
-              *
-            </button>
-          </div>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>1</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>2</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>3</button>
+          <br>
+
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>4</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>5</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>6</button>
+          <br>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>7</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>8</button>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>9</button>
+          <br>
+            <button type="button" name="button" class="numeric_buttons button_reponsiveness";>0</button>
+
         </div>
         <div class="control_buttons">
-          <button type="button" name="button" class="enter_button">
+          <button type="button" name="button" class="enter_button button button_reponsiveness">
             Enter
           </button>
-          <br />
-          <button type="button" name="button" class="delete_button" ;>
+          <button type="button" name="button" class="delete_button button button_reponsiveness">
             Delete
           </button>
-          <button type="button" name="button" class="cancel_button" ;>
+          <button type="button" name="button" class="cancel_button button button_reponsiveness">
             Cancel
           </button>
         </div>
