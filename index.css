@@ -1,10 +1,10 @@
-body{
+body {
   background-color: #000000;
   text-align: center;
 }
 
-.atm_body{
-  border: 0.5em outset #212F3D;
+.atm_body {
+  border: 0.5em outset rgb(105, 136, 167);
   /* border-color: #85929E; */
   /* border-width: 0.1em; */
   height: 80%;
@@ -13,15 +13,15 @@ body{
   background-color: #566573;
 }
 
-h1{
+h1 {
   font-family: monospace;
-  color: #FCF3CF;
+  color: #fcf3cf;
   margin: 0.5em auto 0 auto;
   line-height: normal;
   font-size: 3vw;
 }
 
-.upper_half{
+.upper_half {
   margin: 0.5em auto;
   display: inline-flex;
   width: 100%;
@@ -29,9 +29,9 @@ h1{
   text-align: center;
 }
 
-.atm_screen{
+.atm_screen {
   border: solid #ffffff;
-  border-color: #7F8C8D;
+  border-color: #7f8c8d;
   width: 200vw;
   height: 11vw;
   background-color: white;
@@ -42,57 +42,57 @@ h1{
   font-weight: bold;
 }
 
-.screen_buttons{
+.screen_buttons {
   width: 7vw;
   height: 3.5vw;
   margin-top: 0.2em;
   font-size: 2vw;
-  background-color: #D6DBDF;
+  background-color: #d6dbdf;
 }
 
-.button_style1{
+.button_style1 {
   margin-top: 4vw;
   margin-right: 0.5em;
 }
 
-.button_style2{
+.button_style2 {
   margin-top: 4vw;
   margin-left: 0.5em;
 }
 
-.lower_half{
+.lower_half {
   display: inline-flex;
   width: 100%;
   height: 50%;
   text-align: center;
 }
 
-.numeric_keypads{
+.numeric_keypads {
   margin: 0 0 auto auto;
 }
 
-.button{
+.button {
   width: 13vw;
   height: 5vw;
   font-size: 3vw;
   margin-top: 0.3em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  background-color: #D6DBDF;
+  background-color: #d6dbdf;
   display: block;
 }
 
-.numeric_buttons{
+.numeric_buttons {
   width: 8vw;
   height: 5vw;
   margin: 0.2em;
   font-style: italic;
   font-size: 3vw;
-  background-color: #D6DBDF;
+  background-color: #d6dbdf;
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
+  box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
   background-color: green;
 }
