@@ -1,0 +1,117 @@
+body{
+  background-color: #000000;
+  text-align: center;
+}
+
+.atm_body{
+  border: 0.5em outset #212F3D;
+  border-color: #85929E;
+  border-width: 0.1em;
+  height: 80%;
+  width: 55%;
+  margin: 5em auto;
+  background-color: #566573;
+}
+
+h1{
+  font-family: monospace;
+  color: #FCF3CF;
+  margin: 0.5em auto 0 auto;
+  line-height: normal;
+  font-size: 3vw;
+}
+
+.upper_half{
+  margin: 0.5em auto;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+}
+
+.atm_screen{
+  border: solid #ffffff;
+  border-color: #7F8C8D;
+  width: 45vw;
+  height: 15vw;
+  padding-top: 1.875em;
+  padding-bottom: 0.2em;
+  background-color: black;
+  font-family: monospace;
+  font-weight: bold;
+  color: yellow;
+}
+
+.screen_buttons{
+  width: 7vw;
+  height: 3.5vw;
+  margin: 1vw 0 0 0;
+  font-size: 1.5vw;
+  background-color: #D6DBDF;
+}
+
+.button_style1, .button_style2{
+  width: 10vw;
+  margin-bottom: 1vw;
+}
+
+.lower_half{
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: 50%;
+  text-align: center;
+}
+
+.numeric_keypads{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px 2px;
+}
+
+.zero{
+  grid-column-start: 2;
+}
+
+.button{
+  width: 13vw;
+  height: 5vw;
+  font-size: 3vw;
+  margin: 0.3em 0.5em 0 0.5em;
+  background-color: #D6DBDF;
+  display: block;
+}
+
+.numeric_buttons{
+  width: 8vw;
+  height: 5vw;
+  margin: 0.2em;
+  font-style: italic;
+  font-size: 3vw;
+  background-color: #D6DBDF;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+  background-color: green;
+}
+/*****************Styling for the inner text of the atm screen *******************/
+  .select_transaction_heading{
+    text-align: center;
+  }
+
+ .select_transaction_heading p{
+   font-size: 2vw;
+   margin-top: 0px;
+ }
+
+ #pin{
+   color: yellow;
+   background-color: #1f0033;
+   border: solid #400080 0.2vw;
+   height: 2vw;
+   font-size: 2vw;
+   cursor: text;
+ }
