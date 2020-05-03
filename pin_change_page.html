@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>ATM prototype</title>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap"
-    />
+    <link rel="stylesheet" href="pin_change_page.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap"/>
   </head>
   <body>
     <div class="atm_body">
@@ -20,7 +17,12 @@
           <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button>
         </div>
 
-        <div class="atm_screen"></div>
+        <div class="atm_screen">
+            <div class="select_transaction_heading">
+            <label for="pin"><p>Input Your Current Pin</p></label>
+            <input type="password" name= "password" id="pin" maxlength = "8" value="">
+          </div>
+        </div>
 
         <div class="button_style2">
           <button type="button" name="button" class = "screen_buttons button_reponsiveness">☚</button>
@@ -57,8 +59,6 @@
       </div>
     </div>
 
-    <script src="scripts/key.js"></script>
-    <script src="scripts/db.js" charset="utf-8"></script>
-    <script src="scripts/auth.js" charset="utf-8"></script>
+    <script src="scripts/pin_change_page.js"></script>
   </body>
 </html>
