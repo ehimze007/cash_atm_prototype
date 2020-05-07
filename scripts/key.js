@@ -1,18 +1,22 @@
 const keyPads = document.querySelector(".numeric_keypads");
-const displayScreen = document.querySelector(".atm_screen");
 const delete_button = document.querySelector(".delete_button");
+const cancel_button = document.querySelector(".cancel_button");
 const button_reponsiveness = document.querySelectorAll(".button_reponsiveness");
+const pin_value = document.querySelector('#pin');
 
 keyPads.addEventListener("click", (e) => {
   e.target.tagName === "BUTTON" &&
-    (displayScreen.innerHTML += e.target.textContent);
+   (pin_value.value += e.target.innerText);
+    
 });
 
 delete_button.addEventListener("click", () => {
-  const displayDigits = [...displayScreen.innerHTML];
+  const displayDigits = [...pin_value.value];
   displayDigits.pop();
-  displayScreen.innerHTML = displayDigits.join("");
+  pin_value.value = displayDigits.join("");
 });
+
+cancel_button.addEventListener("click", () => pin_value.value = "");
 
 // listen for clicks on the numeric_buttons and appropriate a style to the clicked button
 for (let i = 0; i < button_reponsiveness.length; i++) {

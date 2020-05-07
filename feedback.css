@@ -1,0 +1,43 @@
+.feedback.fail {
+  background-color: red;
+  animation: fadeInOut 3.5s;
+  -webkit-animation: fadeInOut 3.5s;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.feedback {
+  position: absolute;
+  width: 53%;
+  padding: 0.5em;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0;
+  }
+}
