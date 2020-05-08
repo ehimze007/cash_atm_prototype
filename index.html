@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>ATM prototype</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="pin_change_page.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap"
     />
   </head>
   <body>
+  
     <div class="atm_body">
+      
       <h1>ATM PROTOTYPE</h1>
+      <p class="feedback" style="color: white"></p>
       <div class="upper_half">
         <div class="button_style1">
           <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button>
@@ -20,7 +25,12 @@
           <button type="button" name="button" class = "screen_buttons button_reponsiveness">☛</button>
         </div>
 
-        <div class="atm_screen"></div>
+        
+
+        <div class="atm_screen">
+            <label for="pin"><p class="prompt" >Input Your Card Number</p></label>
+            <input type="text" name= "password" id="pin" maxlength = "15" disabled>
+        </div>
 
         <div class="button_style2">
           <button type="button" name="button" class = "screen_buttons button_reponsiveness">☚</button>
@@ -44,7 +54,7 @@
 
         </div>
         <div class="control_buttons">
-          <button type="button" name="button" class="enter_button button button_reponsiveness">
+          <button id="authenticate" type="button" name="button" class="enter_button button button_reponsiveness">
             Enter
           </button>
           <button type="button" name="button" class="delete_button button button_reponsiveness">
@@ -58,7 +68,7 @@
     </div>
 
     <script src="scripts/key.js"></script>
-    <script src="scripts/db.js" charset="utf-8"></script>
-    <script src="scripts/auth.js" charset="utf-8"></script>
+    <script src="scripts/db.js"></script>
+    <script src="scripts/auth.js"></script>
   </body>
 </html>
