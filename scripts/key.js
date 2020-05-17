@@ -7,7 +7,7 @@ const pin_value = document.querySelector('#pin');
 keyPads.addEventListener("click", (e) => {
   e.target.tagName === "BUTTON" &&
    (pin_value.value += e.target.innerText);
-    
+
 });
 
 delete_button.addEventListener("click", () => {

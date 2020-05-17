@@ -42,17 +42,25 @@ h1{
   color: yellow;
 }
 
+/**************************** styling for the onscreen buttons ***********************/
 .screen_buttons{
+  display: inline-block;
+  border-style: outset;
+  border-color: #808080;
+  color: #000000;
   width: 7vw;
   height: 3.5vw;
-  margin: 1vw 0 0 0;
+  margin: 0.7vw 0 0 0;
   font-size: 1.5vw;
+  text-align: center;
+  padding-top: 0.2vw;
+  text-decoration: none;
   background-color: #D6DBDF;
 }
 
 .button_style1, .button_style2{
   width: 10vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0.5vw;
 }
 
 .lower_half{
